@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gemini-web-mcp"
+version = "1.0.0"
+description = "MCP server for Gemini Web — no API key required, uses browser session via Playwright"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = [
+    "playwright>=1.40.0",
+    "websocket-client>=1.7.0",
+]
+
+[project.scripts]
+gemini-web-mcp = "gemini_mcp:main_sync"
+gemini-login   = "gemini_login:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
