@@ -14,6 +14,13 @@ MCP server for Gemini Web — no API key required. Uses your browser session via
 | `upload_file` | Upload a local file and optionally ask about it |
 | `list_gems` | List available Gems (custom AI personas) |
 | `get_current_url` | Get current conversation URL |
+| `upload_folder` | Upload an entire folder (auto-zipped) |
+| `upload_github_url` | Import code from a GitHub URL |
+| `search_conversations` | Search conversation history |
+| `delete_conversation` | Delete a conversation |
+| `pin_conversation` | Pin or unpin a conversation |
+| `share_conversation` | Get a shareable link |
+| `export_conversation` | Export a conversation to text |
 
 ## Setup
 
